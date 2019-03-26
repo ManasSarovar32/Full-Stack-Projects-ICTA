@@ -1,0 +1,10 @@
+body{
+    background: black;
+}
+table{
+    background: white;
+    border: 2px solid red;
+}
+.myButton{
+    background: yellow;
+}
