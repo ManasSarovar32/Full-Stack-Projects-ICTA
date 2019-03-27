@@ -1,11 +1,12 @@
-var n=12
-var i=0;
-var x;
-while(n!=0)
+var num=132
+var rev=0;
+var rem=0;
+while(num>0)
 {
-    x=n%10;
-    i=i*10+x;
-    n=n/10;
-    console.log(i);
+    rem=num%10;
+    rev=rev*10+rem;
+    num=parseInt(num/10);
+   
    
 }
+console.log(rev);
