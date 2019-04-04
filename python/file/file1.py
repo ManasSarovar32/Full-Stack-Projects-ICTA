@@ -1,0 +1,7 @@
+f=open('test.dat','w')
+f.write('How are you')
+f.write('4')
+f.close()
+f=open('test.dat','r')
+print (f.read())
+f.close()
