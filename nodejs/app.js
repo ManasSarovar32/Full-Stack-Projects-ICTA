@@ -4,7 +4,7 @@ var app=express();
 
 app.get('/',(req,res)=>
 {
-    res.send("Engine out completely");
+    res.send("<h1>Engine out completely</h1>");
 });
 
 app.get('/home',(req,res)=>
@@ -14,7 +14,7 @@ app.get('/home',(req,res)=>
 
 app.get('/contact',(req,res)=>
 {
-    res.send("Contact page")
+    res.send('[{"Name":"Tom","Age":23},{"Name":"Riya","Age":19}]')
 })
 
 app.listen(2255);
