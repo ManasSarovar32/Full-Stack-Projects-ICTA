@@ -1,6 +1,6 @@
 const mymodule=require("./addModule"); //addModule is the custom module(it is created as a new file & es6 is written in that)
 
-var x=12;
+var x=22;
 var y=8;
 
 var z=mymodule.addNum(x,y);
