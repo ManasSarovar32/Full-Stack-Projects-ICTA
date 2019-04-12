@@ -10,7 +10,7 @@ app.use(express.urlencoded());      //urlencoded function used to fetch data fro
 
 app.get('/',(req,res)=>
 {
-    res.render('index');    //render function to get response from index
+    res.render('index',{name:'Tom'});    //render function to get response from index,{name:'Tom'}-->for passing data from back to front
 });
 
 app.get('/about',(req,res)=>
@@ -44,4 +44,22 @@ app.post('/getdata',(req,res)=>
 
 })
 
-app.listen(2255);       //to run
+app.post('/login',(req,res)=>
+{
+    var user=req.body.username;
+    var pass=req.body.password;
+    
+    if(user=='admin'&&pass=='1234')
+    {
+        res.send('success')
+    }
+    else
+    {
+        res.send('failed')
+    }
+})
+
+app.listen(2255,()=>
+{
+    console.log('web app runing succesfully')
+});       //to run
